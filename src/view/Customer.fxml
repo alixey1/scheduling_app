@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="412.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <children>
+      <Label layoutX="25.0" layoutY="23.0" text="Customers">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4cad7e7a" height="318.0" layoutX="25.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="620.0" />
+      <TableView fx:id="customerTable" layoutX="41.0" layoutY="89.0" prefHeight="217.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="57.0" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="91.0" text="Name" />
+            <TableColumn fx:id="addressCol" prefWidth="110.0" text="Address" />
+            <TableColumn fx:id="postalCodeCol" prefWidth="75.0" text="Postal Code" />
+            <TableColumn fx:id="phoneNumberCol" prefWidth="96.0" text="Phone Number" />
+            <TableColumn fx:id="countryCol" prefWidth="81.0" text="Country" />
+            <TableColumn fx:id="divisionCol" prefWidth="78.0" text="Division" />
+        </columns>
+      </TableView>
+      <Button fx:id="updateButton" layoutX="492.0" layoutY="328.0" mnemonicParsing="false" onAction="#onUpdateButtonClicked" text="Update" />
+      <Button fx:id="deleteButton" layoutX="572.0" layoutY="328.0" mnemonicParsing="false" onAction="#onDeleteButtonClicked" text="Delete" />
+       <Button fx:id="returnToMainScreenButton" layoutX="48.0" layoutY="328.0" mnemonicParsing="false" onAction="#onReturnToMainScreenButtonClicked" text="Return to Main Screen" />
+      <Button fx:id="addButton" layoutX="415.0" layoutY="328.0" mnemonicParsing="false" onAction="#onAddButtonClicked" prefHeight="25.0" prefWidth="51.0" text="Add" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SchedulesController">
+   <children>
+      <Label layoutX="26.0" layoutY="28.0" text=" Schedule for:">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="scheduleCombo" layoutX="199.0" layoutY="30.0" prefWidth="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4bab7b7d" height="317.0" layoutX="26.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="547.0" />
+      <Button fx:id="returnToMainButton" layoutX="437.0" layoutY="30.0" mnemonicParsing="false" onAction="#onReturnToMainScreenClicked" prefHeight="25.0" prefWidth="137.0" text="Return to Mainscreen" />
+      <TableView fx:id="appointmentTable" layoutX="43.0" layoutY="88.0" prefHeight="278.0" prefWidth="513.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="98.0" text="Appointment ID" />
+          <TableColumn fx:id="titleCol" prefWidth="77.0" text="Title" />
+            <TableColumn fx:id="startCol" prefWidth="103.0" text="Start Date/Time" />
+            <TableColumn fx:id="endCol" prefWidth="112.0" text="End Date/Time" />
+            <TableColumn fx:id="descriptionCol" prefWidth="120.0" text="Description" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
